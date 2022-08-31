@@ -41,12 +41,19 @@
 </div>
 <br><br>
 
-<button onclick="copyFormatted(document.getElementById('copyMe').innerHTML)">
+<button onclick="copyFunction();">
   Copy the signature
  </button>
 
 
 <script>
+
+
+function copyFunction() {
+	copyFormatted(document.getElementById('copyMe').innerHTML);
+	alert("Signature copied, please paste it.");
+}
+
 
 
 function copyFormatted (html) {
