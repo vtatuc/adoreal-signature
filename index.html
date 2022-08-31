@@ -34,7 +34,7 @@
 
 <div id="email">
 <img style="display: inline-block; vertical-align: middle; margin-right: 5px;" src="https://i.imgur.com/NfAkL9T.png" width="16">
-<span id="result_email" style="display: inline-block; vertical-align: middle;  font-size: 12pt;"></span>
+<a href="" id="result_email" style="display: inline-block; vertical-align: middle;  font-size: 12pt;"></a>
 </div>
 
 </div>
@@ -124,6 +124,8 @@ function copyFormatted (html) {
 	result_phone.innerHTML = source_phone.value
 	result_email.innerHTML = source_email.value
 	
+	result_email.setAttribute("href", 'mailto:' + source_email.value);
+	
 	console.log(source_name)
 
 	const inputHandlerName = function(e) {
@@ -141,6 +143,8 @@ function copyFormatted (html) {
 	
 	const inputHandlerEmail = function(e) {
 		result_email.innerHTML = e.target.value;
+		
+		result_email.setAttribute("href", 'mailto:' + e.target.value);
 	}
 
 source_name.addEventListener('input', inputHandlerName);
