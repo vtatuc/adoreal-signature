@@ -3,30 +3,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </HEAD>
-<BODY style="font-size: 10pt; font-family: 'Calibri', sans-serif;">
+<BODY style="font-size: 12pt; font-family: 'Calibri', sans-serif;">
 
 <div>
 <label>Name:</label>
 <input id="source_name" type="text" placeholder="Enter name" value="Johan Andersson"></input></br>
 <label>Position:</label>
-<input id="source_position" type="text" placeholder="Enter position" value="President, Adoreal"></input></br>
+<input id="source_position" type="text" placeholder="Enter position" value="President"></input></br>
 <label>Phone:</label>
 <input id="source_phone" type="text" placeholder="Enter phone" value="+40 000 000 000"></input></br>
 <label>Email:</label>
-<input id="source_email" type="text" placeholder="Enter email" value="johan@adoreal.com"></input></br>
+<input id="source_email" type="text" placeholder="Enter email" value="jandersson@adoreal.com"></input></br>
 </div>
 
 <h3>Preview:</h3>
 
 <div id="copyMe">
-<div>
-<img style="display: inline-block; vertical-align: middle; margin-right: 10px; " src="https://i.imgur.com/Y3H7AgC.png" width="150">
-<div style="display: inline-block; vertical-align: middle;">
-<h2 style="margin: 0; padding: 0;" id="result_name"></h2>
-<span id="result_position" style="font-size: 10pt;"></span>
+
+
+<div id="inside-wrap" style="font-size: 12pt; margin: 0; padding: 0;">
+
+<div id="employee" style="margin-bottom: 10px;">
+
+<p style="font-weight: bold; margin: 0; padding: 0; font-size: 16pt;" id="result_name"></p>
+<span id="result_position" style="font-size: 12pt; margin: 0; padding: 0;"></span>
+
 </div>
-</div>
-<div>
+
+<div id="employee_data" style="margin-bottom: 13px;">
 
 <div id="phone">
 <img style="display: inline-block; vertical-align: middle; margin-right: 5px;" src="https://i.imgur.com/FJnb0oh.png" width="16">
@@ -39,7 +43,15 @@
 </div>
 
 </div>
+
+<div id="logo">
+<img style="" src="https://i.imgur.com/Hc76DI3.png" width="200">
 </div>
+
+</div>
+
+</div>
+
 <br><br>
 
 <button onclick="copyFunction();">
